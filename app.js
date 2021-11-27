@@ -25,7 +25,7 @@ app.use(express.urlencoded({ extended: false }));
 
 
 app.set("view engine", "hbs");
-app.get("/index", (req, res) => {
+app.get("/", (req, res) => {
     res.render("index");
 });
 app.get("/login", (req, res) => {
